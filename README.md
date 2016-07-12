@@ -2,6 +2,8 @@ self-ip
 -------
 
 [![Build Status](https://img.shields.io/travis/pine/self-ip/master.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/pine/self-ip)
+[![Dependency Status](https://img.shields.io/david/pine/self-ip.svg?style=flat-square)](https://david-dm.org/pine/self-ip)
+[![devDependency Status](https://img.shields.io/david/dev/pine/self-ip.svg?style=flat-square)](https://david-dm.org/pine/self-ip#info=devDependencies)
 
 Get self IP addresses
 
