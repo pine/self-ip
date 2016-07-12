@@ -1,0 +1,38 @@
+{
+  "name": "self-ip",
+  "version": "0.1.0",
+  "description": "Get self IP addresses",
+  "main": "index.js",
+  "scripts": {
+    "test": "eslint lib test && ava -v"
+  },
+  "files": [
+    "lib",
+    "index.js",
+    "*.md"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "ava": "^0.15.2",
+    "eslint": "^3.0.1",
+    "proxyquire": "^1.7.10"
+  },
+  "engines": {
+    "node": ">= 4.0.0"
+  },
+  "author": {
+    "name": "Pine Mizune",
+    "email": "pinemz@gmail.com",
+    "url": "https://github.com/pine"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pine/self-ip"
+  },
+  "bugs": {
+    "url": "https://github.com/pine/self-ip/issues"
+  },
+  "homepage": "https://github.com/pine/self-ip",
+  "license": "MIT"
+}
