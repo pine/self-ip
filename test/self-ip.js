@@ -13,7 +13,7 @@ const ip = proxyquire('../lib/self-ip', {
 
 test('ip', t => {
   const ips = ip()
-  t.deepEqual(ips.v4, [ '192.168.0.2' ])
+  t.deepEqual(ips.v4.sort(), [ '192.168.0.2' ])
   t.deepEqual(ips.v6.sort(), [
     'ffff::abcd:1234:1234:5678',
     'ffff::abcd:1234:1234:6789',
