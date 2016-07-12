@@ -1,6 +1,8 @@
 self-ip
 -------
 
+[![Build Status](https://img.shields.io/travis/pine/self-ip/master.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/pine/self-ip)
+
 Get self IP addresses
 
 ## Getting Started
