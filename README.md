@@ -1,6 +1,8 @@
 self-ip
 -------
 
+Get self IP addresses
+
 ## Getting Started
 
 ```
