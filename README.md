@@ -24,5 +24,21 @@ ip.v4() // ['192.0.0.2']
 ip.v6() // ['ffff::abcd:1234:1234:5678']
 ```
 
+## Reference
+### `ip(pattern)`
+- `pattern` (RegExp): interface name pattern
+  - Default: `/^(en|eth)/`
+- **Result** (Object): `{ v4: ['v4addr'], v6: ['v6addr'] }`
+
+### `ip.v4(pattern)`
+- `pattern` (RegExp): interface name pattern
+  - Default: `/^(en|eth)/`
+- **Result** (Array): `['v4addr']`
+
+### `ip.v6(pattern)`
+- `pattern` (RegExp): interface name pattern
+  - Default: `/^(en|eth)/`
+- **Result** (Array): `['v6addr']`
+
 ## License
 MIT
