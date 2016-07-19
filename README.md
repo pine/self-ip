@@ -35,7 +35,7 @@ ip.v6() // ['ffff::abcd:1234:1234:5678']
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v4addr']`
 
-### `ip.v6(pattern)`
+### `ip.v6(isLo)`
 - `isLo(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v6addr']`
