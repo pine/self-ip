@@ -30,7 +30,7 @@ test('ip.v4', t => {
     '172.31.27.140',
     '192.168.0.2',
   ])
-  t.deepEqual(ip.v4(/./).sort(), [
+  t.deepEqual(ip.v4(() => false).sort(), [
     '127.0.0.1',
     '172.31.27.140',
     '192.168.0.2',
@@ -44,7 +44,7 @@ test('ip.v6', t => {
     'ffff::abcd:1234:1234:6789',
     'ffff::abcd:1234:1234:7890',
   ])
-  t.deepEqual(ip.v6(/./).sort(), [
+  t.deepEqual(ip.v6(() => false).sort(), [
     '::1',
     'ff88::400:fff:ff55:dddd',
     'ffff::1',
