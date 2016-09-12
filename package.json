@@ -12,7 +12,7 @@
     "*.md"
   ],
   "dependencies": {
-    "is-lo": "^0.1.1"
+    "is-lo": "^0.2.0"
   },
   "devDependencies": {
     "ava": "^0.16.0",
