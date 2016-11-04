@@ -14,6 +14,12 @@ Get self IP addresses
 $ npm install --save self-ip
 ```
 
+or
+
+```
+$ yarn add self-ip
+```
+
 ## Usage
 
 ```js
