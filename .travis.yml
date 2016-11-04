@@ -4,6 +4,10 @@ node_js:
   - 5
   - 6
 
+install:
+  - npm i -g yarn
+  - yarn
+
 notifications:
   slack:
     - secure: "SwXZrzi7NhuypcrhhgJMxRFu718gdkkB72CHXex4sAIiXIQ3cs3fT2MWU2o7Hjk7rVGhyX5qghbCD7kYbw6J32MbEnbkZRQxmaT7GyND2AVsKZqrz1xmqeCncyQo6TzT6M32yqacvgBCGYLTaokrhwQZBh3DrSjuyFdhCX0r2lyMaqROX2VvToNcjAOiIl3eh/hoI7AvXSUEQDM99OzstvPzZ8GyBWW6/U/r87w+D2NvNjxOLtrUf3Dw36asgT/PgK/AN4Dcq/QgbDbQtFuEPOiUzNRQKAmrMMd5x9lIpbdNrxirNUWxeKMZjANlBXEPIWn3cQyjxgtOFo5fvZzTH57qQuOVqrqc7cTlmOnrpdck7glOWxBBee0rUjfcD5XJfDYvmvD9j+3ZWkAw90FKLFgC5gUUBAZRZfhqKO5NmcDNZVViU4KUXjL0bn0gqgWZe2eMC2GvVM3lnpZ4BJ7QZrWWjyp2WC9evWv/ITmmli/GhuYjgOlRbxSA9xckiPg8FCmB5eNnvFtxv9cP6w7GPIDFKFX7mxTalUdhStthwJ7x6BXylxfJbDvn4Os6VSFO9xm/3BR49bwG5nKprCm0PUemhJH+0upKNNBKk0eeWVEl+xugzr4AYPFybb5FnJXbK7mCAGFxdnCTM+0FXQ62/ys+NkDX9KZty+/hKl4Lpm4="
