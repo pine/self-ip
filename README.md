@@ -31,20 +31,20 @@ ip.v6() // ['ffff::abcd:1234:1234:5678']
 ```
 
 ## Reference
-### `ip(isLo)`
+### `ip([ isLo = require('is-lo') ])`
 - `isLo(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Object): `{ v4: ['v4addr'], v6: ['v6addr'] }`
 
-### `ip.v4(isLo)`
+### `ip.v4([ isLo = require('is-lo') ])`
 - `isLo(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v4addr']`
 
-### `ip.v6(isLo)`
+### `ip.v6([ isLo = require('is-lo') ])`
 - `isLo(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v6addr']`
 
 ## License
-MIT
+MIT &copy; Pine Mizune
