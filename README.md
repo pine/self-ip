@@ -1,6 +1,8 @@
 self-ip
 -------
 
+[![NPM](https://nodei.co/npm/self-ip.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/self-ip/)
+
 [![npm](https://img.shields.io/npm/v/self-ip.svg?maxAge=2592000&style=flat-square)](https://www.npmjs.org/package/self-ip)
 [![Build Status](https://img.shields.io/travis/pine/self-ip/master.svg?maxAge=2592000&style=flat-square)](https://travis-ci.org/pine/self-ip)
 [![Dependency Status](https://img.shields.io/david/pine/self-ip.svg?maxAge=2592000&style=flat-square)](https://david-dm.org/pine/self-ip)
@@ -11,13 +13,13 @@ Get self IP addresses
 ## Getting Started
 
 ```
-$ npm install --save self-ip
+$ yarn add self-ip
 ```
 
 or
 
 ```
-$ yarn add self-ip
+$ npm install --save self-ip
 ```
 
 ## Usage
