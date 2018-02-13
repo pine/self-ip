@@ -1,6 +1,8 @@
 self-ip
 -------
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/pine/self-ip.svg)](https://greenkeeper.io/)
+
 [![NPM](https://nodei.co/npm/self-ip.png?downloads=true&downloadRank=true&stars=true)](https://nodei.co/npm/self-ip/)
 
 [![npm](https://img.shields.io/npm/v/self-ip.svg?maxAge=2592000&style=flat-square)](https://www.npmjs.org/package/self-ip)
