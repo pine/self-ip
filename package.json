@@ -1,6 +1,6 @@
 {
   "name": "self-ip",
-  "version": "0.3.5",
+  "version": "0.3.6",
   "description": "Get self IP addresses",
   "main": "index.js",
   "scripts": {
