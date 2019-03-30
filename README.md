@@ -51,4 +51,4 @@ ip.v6() // ['ffff::abcd:1234:1234:5678']
 - **Result** (Array): `['v6addr']`
 
 ## License
-MIT &copy; Pine Mizune
+MIT &copy; [Pine Mizune](https://profile.pine.moe)
