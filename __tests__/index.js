@@ -1,23 +1,20 @@
 'use strict'
+/* global jest, test, expect */
 
-const test = require('ava')
-const proxyquire = require('proxyquire')
+const os = require('os')
+const ip = require('../index.js')
+const interfaces = require('./interfaces.json')
 
-const ip = proxyquire('../lib/self-ip', {
-  os: {
-    networkInterfaces () {
-      return require('./interfaces.json')
-    },
-  },
-})
+jest.mock('os')
+os.networkInterfaces.mockReturnValue(interfaces)
 
-test('ip', t => {
+test('ip', () => {
   const ips = ip()
-  t.deepEqual(ips.v4.sort(), [
+  expect(ips.v4.sort()).toEqual([
     '172.31.27.140',
     '192.168.0.2',
   ])
-  t.deepEqual(ips.v6.sort(), [
+  expect(ips.v6.sort()).toEqual([
     'ff88::400:fff:ff55:dddd',
     'ffff::abcd:1234:1234:5678',
     'ffff::abcd:1234:1234:6789',
@@ -25,26 +22,26 @@ test('ip', t => {
   ])
 })
 
-test('ip.v4', t => {
-  t.deepEqual(ip.v4().sort(), [
+test('ip.v4', () => {
+  expect(ip.v4().sort()).toEqual([
     '172.31.27.140',
     '192.168.0.2',
   ])
-  t.deepEqual(ip.v4(() => false).sort(), [
+  expect(ip.v4(() => false).sort()).toEqual([
     '127.0.0.1',
     '172.31.27.140',
     '192.168.0.2',
   ])
 })
 
-test('ip.v6', t => {
-  t.deepEqual(ip.v6().sort(), [
+test('ip.v6', () => {
+  expect(ip.v6().sort()).toEqual([
     'ff88::400:fff:ff55:dddd',
     'ffff::abcd:1234:1234:5678',
     'ffff::abcd:1234:1234:6789',
     'ffff::abcd:1234:1234:7890',
   ])
-  t.deepEqual(ip.v6(() => false).sort(), [
+  expect(ip.v6(() => false).sort()).toEqual([
     '::1',
     'ff88::400:fff:ff55:dddd',
     'ffff::1',
