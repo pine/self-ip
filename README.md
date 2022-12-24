@@ -26,16 +26,22 @@ ipv6()
 
 ## Reference
 ### `ip([ checker ])`
+Get both IPv4 and IPv6 self-addresses
+
 - `checker(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Object): `{ v4: ['v4addr'], v6: ['v6addr'] }`
 
-### `ip.v4([ checker ])`
+### `ipv4([ checker ])`
+Get IPv4 self-addresses
+
 - `checker(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v4addr']`
 
-### `ip.v6([ checker ])`
+### `ipv6([ checker ])`
+Get IPv6 self-addresses
+
 - `checker(addrs, name)` (function): check if it is a loopback network interface or not
   - default: [is-lo](https://github.com/pine/is-lo) module
 - **Result** (Array): `['v6addr']`
