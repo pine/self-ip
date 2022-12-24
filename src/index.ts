@@ -11,25 +11,25 @@ interface Result {
 }
 
 export function ip(checkerOpt?: LoopbackChecker): Result {
+    const checker: LoopbackChecker = checkerOpt ?? ((info, name) => isLo(info))
     const interfaces = os.networkInterfaces()
     const names = Object.keys(interfaces)
-    const checker: LoopbackChecker = checkerOpt ?? ((info, name) => isLo(info))
 
     const v4: string[] = []
     const v6: string[] = []
 
     names.forEach(name => {
-        const addrs = interfaces[name]
-        if (!addrs) {
+        const info = interfaces[name]
+        if (!info) {
             return
         }
 
-        if (!checker(addrs, name)) {
-            addrs.forEach(addr => {
-                if (addr.family === 'IPv4') {
-                    v4.push(addr.address)
-                } else if (addr.family === 'IPv6') {
-                    v6.push(addr.address)
+        if (!checker(info, name)) {
+            info.forEach(v => {
+                if (v.family === 'IPv4') {
+                    v4.push(v.address)
+                } else if (v.family === 'IPv6') {
+                    v6.push(v.address)
                 }
             })
         }
