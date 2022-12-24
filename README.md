@@ -2,6 +2,10 @@
 
 Get self IP addresses
 
+## Features
+- Supports TypeScript
+- Supports both CommonJS and ESModules
+
 ## Getting Started
 
 ```sh
