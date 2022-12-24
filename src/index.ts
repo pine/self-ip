@@ -12,7 +12,6 @@ interface Result {
 
 export function ip(checkerOpt?: LoopbackChecker): Result {
     const interfaces = os.networkInterfaces()
-    console.log(interfaces)
     const names = Object.keys(interfaces)
     const checker: LoopbackChecker = checkerOpt ?? ((info, name) => isLo(info))
 
