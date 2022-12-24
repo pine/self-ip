@@ -9,6 +9,9 @@ $ npm install --save self-ip # for npm users
 $ yarn add self-ip           # for yarn users
 ```
 
+## Breaking Changes
+There are breaking changes in `v1.0.0`. See [the release note](https://github.com/pine/self-ip/releases/tag/v1.0.0) for more details.
+
 ## Usage
 
 ```js
