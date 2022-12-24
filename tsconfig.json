@@ -1,0 +1,21 @@
+{
+  "compilerOptions": {
+    // Type Checking
+    "noFallthroughCasesInSwitch": true,
+    "noImplicitAny": true,
+    "noImplicitOverride": true,
+    "noImplicitReturns": true,
+    "noImplicitThis": true,
+    "strict": true,
+
+    // Modules
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+
+    // Language and Environment
+    "target": "es5",
+
+    // Interop Constraints
+    "esModuleInterop": true,
+  }
+}
