@@ -1,4 +1,4 @@
-# self-ip &nbsp;[![npm](https://img.shields.io/npm/v/self-ip.svg?maxAge=2592000&style=shield)](https://www.npmjs.org/package/self-ip) [![License](https://img.shields.io/github/license/emoji-gen/clone-into.svg)](LICENSE)
+# self-ip &nbsp;[![npm](https://img.shields.io/npm/v/self-ip.svg?maxAge=2592000&style=shield)](https://www.npmjs.org/package/self-ip) [![build](https://github.com/pine/self-ip/actions/workflows/build.yml/badge.svg)](https://github.com/pine/self-ip/actions/workflows/build.yml) [![License](https://img.shields.io/github/license/emoji-gen/clone-into.svg)](LICENSE)
 
 Get self IP addresses
 
