@@ -17,9 +17,26 @@ $ yarn add self-ip           # for yarn users
 There are breaking changes in `v1.0.0`. See [the release note](https://github.com/pine/self-ip/releases/tag/v1.0.0) for more details.
 
 ## Usage
+### ESModules
 
 ```js
 import { ip, ipv4, ipv6 } from 'self-ip'
+
+ip()
+// ==> { v4: ['192.0.0.2'], v6: ['ffff::abcd:1234:1234:5678'] }
+
+ipv4()
+// ==> ['192.0.0.2']
+
+ipv6()
+// ==> ['ffff::abcd:1234:1234:5678']
+```
+
+### CommonJS
+
+
+```js
+const { ip, ipv4, ipv6 } = require('self-ip')
 
 ip()
 // ==> { v4: ['192.0.0.2'], v6: ['ffff::abcd:1234:1234:5678'] }
